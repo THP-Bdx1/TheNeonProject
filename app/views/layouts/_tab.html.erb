@@ -1,25 +1,77 @@
+
 <div class="tab">
-<div class="tabheader">
-<button class="tablinks" id="defaultTab" onclick="openTab(event, 'Accueil')">Accueil</button>
-<button class="tablinks" onclick="openTab(event, 'Paris')">Paris</button>
-<button class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</button>
-</div>
+    <div class="tabheader">
+        <button class="tablinks" id="defaultTab" onclick="openTab(event, 'Accueil')">Accueil</button>
+        <button class="tablinks" onclick="openTab(event, 'GLaDOS')">GLaDOS</button>
+        <button class="tablinks" onclick="openTab(event, 'HAL')">HAL</button>
+        <button class="tablinks" onclick="openTab(event, 'Daft Punk')">Daft Punk</button>
+        <button class="tablinks" onclick="openTab(event, 'Cortana')">Cortana</button>
+        <button class="tablinks" onclick="openTab(event, 'Auto')">Auto</button>
+        <button class="tablinks" onclick="openTab(event, 'Skynet')">Skynet</button>
+        <button class="tablinks" onclick="openTab(event, 'Ultron')">Ultron</button>
+    </div>
 
-<!-- Tab content -->
-<div id="Accueil" class="tabcontent">
-<h1>WELCOME</h1>
-<button class="btn-one">START</button>
-</div>
+    <!-- Tab content -->
+    <div id="Accueil" class="tabcontent">
+        <h1>WELCOME</h1>
+        <audio id="myAudio" src="/audios/terminator.mp3" preload="auto">
+        </audio>
+        <button onclick="togglePlay()" class="btn-one">START</button>
+    </div>
 
-<div id="Paris" class="tabcontent">
-<h1>Paris</h1>
-<p><img class="avatar" src="/images/hal9000.jpg" height="300px" width="300px"></p>
-</div>
+    <div id="GLaDOS" class="tabcontent">
+        <h1>GLaDOS</h1>
+        <p><img class="avatar-xxlg" src="/images/glados.jpg" height="300px" width="300px"></p>
+    </div>
 
-<div id="Tokyo" class="tabcontent">
-<h1>Tokyo</h1>
-<p>Tokyo is the capital of Japan.</p>
-</div>
-</div>
+    <div id="HAL" class="tabcontent">
+        <h1>HAL</h1>
+        <p><img class="avatar-xxlg" src="/images/hal9000.jpg" height="300px" width="300px"></p>
+    </div>
 
+    <div id="Daft Punk" class="tabcontent">
+        <h1>Daft Punk</h1>
+        <p><img class="avatar-xxlg" src="/images/DaftPunk.jpg" height="300px" width="300px"></p>
+    </div>
+
+    <div id="Cortana" class="tabcontent">
+        <h1>Cortana</h1>
+        <p><img class="avatar-xxlg" src="/images/Cortana.jpg" height="300px" width="300px"></p>
+    </div>
+
+    <div id="Auto" class="tabcontent">
+        <h1>Auto</h1>
+        <p><img class="avatar-xxlg" src="/images/Auto.png" height="300px" width="300px"></p>
+    </div>
+    
+    <div id="Skynet" class="tabcontent">
+        <h1>Skynet</h1>
+        <p><img class="avatar-xxlg" src="/images/Skynet.png" height="300px" width="300px"></p>
+    </div>
+
+    <div id="Ultron" class="tabcontent">
+        <h1>Ultron</h1>
+        <p><img class="avatar-xxlg" src="/images/Ultron.jpg" height="300px" width="300px"></p>
+    </div>
+</div>
 <script>document.getElementById("defaultTab").click();</script>
+
+<script>
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+function togglePlay() {
+    document.body.style.background ="#000000 url('/images/tron.gif') no-repeat center center fixed";
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
+};
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+</script>

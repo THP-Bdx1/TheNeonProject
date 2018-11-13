@@ -1,0 +1,49 @@
+.page-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.page-content-left {
+    position: fixed;
+    left: 40%;
+    margin: 20px;
+    border-color: rgba(71, 255, 122, 0.9);
+    background-color: rgba(0, 120, 0, 0.3);
+    color: rgba(71, 255, 122, 0.9);
+}
+
+.page-content-right {
+    position: fixed;
+    right: 40%;
+    margin: 20px;
+    border-color: rgba(212, 12, 41, 0.9);
+    background-color: rgba(120, 0, 0, 0.3);
+    color: rgba(212, 12, 41, 0.9);
+}
+
+#p1 {
+    position: fixed;
+    left: 1%; 
+    min-width: 400px;
+    max-width: 400px;
+}
+
+#p2 {
+    position: fixed;
+    right: 1%;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.p1-text {
+text-align: left;
+color:rgba(71, 255, 122, 0.9);
+font-family: 'Quantico', sans-serif;
+
+}
+
+.p2-text {
+text-align: right;
+color: rgba(212, 12, 41, 0.9);
+font-family: 'Quantico', sans-serif;
+}

@@ -1,24 +1,12 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+    font-family: 'Orbitron', sans-serif;
 
-Things you may want to cover:
+    font-family: 'Chakra Petch', sans-serif;
 
-* Ruby version
+    font-family: 'Audiowide', cursive;
 
-* System dependencies
+    font-family: 'VT323', monospace;
 
-* Configuration
+    font-family: 'Quantico', sans-serif;
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    

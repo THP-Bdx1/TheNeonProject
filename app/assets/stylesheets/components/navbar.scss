@@ -2,9 +2,65 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #f1f1f1;
+  height: 100px;
 }
 
 .navbar div {
   padding: 14px 16px;
+}
+
+.ctr-link {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: rgba(51, 102, 254, 1);
+  margin: auto;
+  text-shadow: 0 0 5px rgba(51, 102, 254, 1), 0 0 10px rgba(51, 102, 254, 1), 0 0 20px rgba(51, 102, 254, 0.52), 0 0 30px rgba(51, 102, 254, 0.37);
+}
+
+.logo {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: auto;
+}
+
+.scrt-msg {
+  color: rgba(51, 102, 254, 1);
+  text-shadow: 0 0 5px rgb(0, 110, 255), 0 0 10px rgba(0, 110, 255, 1), 0 0 20px rgba(0, 110, 255, 0.52);
+}
+
+.card {
+  text-shadow: 0 0 5px rgba(51, 102, 254, 1), 0 0 10px rgba(51, 102, 254, 0.5), 0 0 20px rgba(51, 102, 254, 0.4), 0 0 30px rgba(51, 102, 254, 0.3);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #022464;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: red;
+  padding: 12px 16px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

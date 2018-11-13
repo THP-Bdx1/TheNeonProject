@@ -32,3 +32,22 @@ function openTab(evt, Name) {
     document.getElementById(Name).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function p1Appear() {
+    var x = document.getElementById("p1");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+} 
+
+function p2Appear() {
+    var x = document.getElementById("p2");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+} 
+

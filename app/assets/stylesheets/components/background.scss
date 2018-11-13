@@ -3,6 +3,11 @@ body {
               rgba(2,0,36,0.31974788206298144) 0%,
               rgba(9,9,121,0.12927169158679097) 86%,
               rgba(0,108,255,0.16288513696494222) 100%),
-              url("/images/tron.gif") no-repeat center center fixed;
+              url("/images/black.png") no-repeat center center;
   background-color: black;
 }
+
+.BgClass {
+  background: url("/images/tron.gif") no-repeat center center fixed;
+}
+
